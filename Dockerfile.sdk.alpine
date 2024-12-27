@@ -1,0 +1,7 @@
+FROM alpine:3.21
+#install dotnet sdk and dependetes to create aot builds
+RUN apk add dotnet9-sdk clang build-base zlib-dev --no-cache
+#add dotnet tools to path
+ENV PATH="$PATH:/root/.dotnet/tools"
+#enter in shell
+CMD ["/bin/sh"]
