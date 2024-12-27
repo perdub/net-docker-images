@@ -9,4 +9,5 @@ jobs:
             - name: Build
               run: |
                 docker login -u ${{secrets.DOCKER_USER}} -p ${{secrets.DOCKER_TOKEN}}
+                chmod 755 build.sh
                 ./build.sh
