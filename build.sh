@@ -14,4 +14,4 @@ docker image push perdub/dotnet-images:sdk-alpine-latest
 docker image push perdub/dotnet-images:runtime-alpine-${GITHUB_RUN_ATTEMPT}
 docker image push perdub/dotnet-images:runtime-alpine-latest
 docker image push perdub/dotnet-images:aot-sdk-alpine-${GITHUB_RUN_ATTEMPT}
-docker image push perdub/dotnet-images:aot-sdk-alpine
+docker image push perdub/dotnet-images:aot-sdk-alpine-latest
